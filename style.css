@@ -1,0 +1,153 @@
+
+body {
+    background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease; 
+}
+
+body:hover {
+    background: linear-gradient(135deg, #FFCCF9 0%, #D4FCFF 100%); 
+}
+
+
+.logo-container {
+    text-align: center;
+    margin-top: 50px;
+    animation: float 3s ease-in-out infinite; 
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); 
+}
+
+.logo:hover {
+    transform: rotate(-15deg) scale(1.1); 
+}
+
+.tagline {
+    font-size: 26px;
+    color: #FF69B4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+    margin-top: 15px;
+    animation: glow 2s ease-in-out infinite; 
+}
+
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4; }
+    50% { text-shadow: 0 0 10px #FF69B4, 0 0 20px #FF69B4; }
+}
+
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #FF69B4;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    animation: bounce 2s infinite; 
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+h2 {
+    font-size: 28px;
+    text-transform: capitalize;
+    border-bottom: 2px solid #FF69B4; 
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 25px;
+    margin: 50px auto;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02); 
+}
+
+
+input, textarea {
+    border: 2px solid #FF69B4;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 92%;
+    margin: 12px 0;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #33CCFF; 
+    outline: none;
+    box-shadow: 0 0 8px #33CCFF;
+}
+
+
+button, a {
+    background: linear-gradient(45deg, #FF69B4, #33CCFF);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover, a:hover {
+    background: linear-gradient(45deg, #33CCFF, #FF69B4);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #33CCFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+footer:hover {
+    background-color: #FF69B4; 
+    transition: background-color 0.3s;
+}
+
+
